@@ -5,6 +5,7 @@ import {useRef} from 'react';
 import {Parallax, ParallaxLayer} from '@react-spring/parallax'
 import { config } from 'react-spring'
 import {useSpring, animated} from 'react-spring'
+import Navbar from '../components/Navbar'
 
 const Home: NextPage = () => {
   const ref = useRef()
@@ -16,6 +17,9 @@ const Home: NextPage = () => {
       </Head>
       <Parallax pages={8} ref={ref}>
 <main>
+  <ParallaxLayer>
+     <Navbar />
+  </ParallaxLayer>
    <ParallaxLayer
     offset={0}
     speed={0.1}
