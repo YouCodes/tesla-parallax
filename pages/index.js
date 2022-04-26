@@ -1,4 +1,3 @@
-import { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import {useRef} from 'react';
@@ -7,7 +6,7 @@ import { config } from 'react-spring'
 import {useSpring, animated} from 'react-spring'
 import Navbar from '../components/Navbar'
 
-const Home: NextPage = () => {
+function Home() {
   const ref = useRef()
   return (
     <div>
