@@ -14,21 +14,23 @@ export default function Home() {
         <title>Tesla</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Parallax pages={8} ref={ref}>
-<main>
-  <ParallaxLayer>
+      <Parallax pages={7.5} ref={ref}>
+       <ParallaxLayer sticky={{ start: 0, end: 7 }}>
+   <div className="sticky top-0 z-50 bg-black border-b border-gray-700">
      <Navbar />
+     </div>
   </ParallaxLayer>
+<main className="">
    <ParallaxLayer
     offset={0}
     speed={0.1}
     factor={1}
-    style={{ textAlign: 'center', width: '100%', height: 'auto'}}>
+    style={{ textAlign: 'center', width: 'auto', height: 'auto'}}>
 <img src="https://tesla-cdn.thron.com/delivery/public/image/tesla/03e533bf-8b1d-463f-9813-9a597aafb280/bvlatuR/std/4096x2560/M3-Homepage-Desktop-LHD" srcset="https://tesla-cdn.thron.com/delivery/public/image/tesla/03e533bf-8b1d-463f-9813-9a597aafb280/bvlatuR/std/4096x2560/M3-Homepage-Desktop-LHD" alt="Red Model 3 parked on weathered concrete in front of a cityscape" class="tds-asset-fallback tcl-asset tcl-image__asset tcl-objectfit-position tcl-objectfit-position--center" />
 </ParallaxLayer>
 <ParallaxLayer
 offset={0.15}
-style={{ textAlign: 'center', width: '100%', height: 'auto'}}> 
+style={{ textAlign: 'center', width: 'auto', height: 'auto'}}> 
 <h1 className=""><font size="7"><strong>Model 3</strong></font></h1>
 </ParallaxLayer>
 <ParallaxLayer
@@ -39,7 +41,7 @@ style={{ textAlign: 'center', width: '100%', height: 'auto'}}>
 </ParallaxLayer>
 <ParallaxLayer
 offset={1.35}
-style={{ textAlign: 'center', width: '100%', height: 'auto'}}> 
+style={{ textAlign: 'center', width: 'auto', height: 'auto'}}> 
 <h1 className=""><font size="7"><strong>Model Y</strong></font></h1>
 </ParallaxLayer>
 <ParallaxLayer
@@ -97,35 +99,6 @@ offset={6.35}
 style={{ textAlign: 'center', width: '100%', height: 'auto'}}> 
 <h1 className=""><font size="7"><strong>Accessories</strong></font></h1>
 </ParallaxLayer>
-   <ParallaxLayer offset={7} speed={2} className="bg-[#DFDFDE]" />
-<ParallaxLayer
-    offset={7}
-    speed={1}
-    style={{
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center',
-      color: 'black',
-    }}
-     onClick={() => ref.current.scrollTo(0)}>
-    <p>Click Anywhere to Scroll Up</p>
-  </ParallaxLayer>
-<ParallaxLayer
-offset={7.85}
-speed={1}
->
-      <footer className="">
-        <a
-          className="flex items-center justify-center"
-          href="https://louisyou.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          YouCodes{' '}
-          <Image src="/img/girl.gif" alt="" width={24} height={24} className="rounded-full"/>
-        </a>
-      </footer>
-      </ParallaxLayer>
       </main>
       </Parallax>
     </div>

@@ -23,6 +23,14 @@
     @apply text-[#1d9bf0] font-normal hover:underline cursor-pointer;
   }
 }
+@media (max-width: 767px) {                  
+   h1 {
+      display: none;
+   }
+   img{
+     object-fit: contain;
+   }
+}
 
 ::-webkit-scrollbar {
     width: 15px;
