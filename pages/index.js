@@ -6,7 +6,7 @@ import { config } from 'react-spring'
 import {useSpring, animated} from 'react-spring'
 import Navbar from '../components/Navbar'
 
-function Home() {
+export default function Home() {
   const ref = useRef()
   return (
     <div>
@@ -131,5 +131,3 @@ speed={1}
     </div>
   )
 }
-
-export default Home
